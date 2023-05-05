@@ -1,0 +1,92 @@
+▶ Parsing command line ...
+
+▶ Detecting Docker platform
+Detected Docker platform is linux/amd64
+
+▶ Initializing Docker Compose ...
+
+▶ Setting up error handling ...
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 292B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/debian:bullseye-slim
+#3 DONE 0.8s
+
+#4 [1/2] FROM docker.io/library/debian:bullseye-slim@sha256:f4da3f9b18fc242b739807a0fb3e77747f644f2fb3f67f4403fafce2286b431a
+#4 DONE 0.0s
+
+#5 [2/2] RUN set -x   && apt-get update   && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends jq   && apt-get clean   && rm -rf /var/lib/apt/lists/*
+#5 CACHED
+
+#6 exporting to image
+#6 exporting layers done
+#6 writing image sha256:a6caeee04b27a4a15bbb14b3643aae9f135ec88c076144c65484411a384945a5 done
+#6 naming to docker.io/library/sentry-self-hosted-jq-local done
+#6 DONE 0.0s
+
+Hey, so ... we would love to automatically find out about issues with your
+Sentry instance so that we can improve the product. Turns out there is an app
+for that, called Sentry. Would you be willing to let us automatically send data
+about your instance upstream to Sentry for development and debugging purposes?
+
+  y / yes / 1
+  n / no / 0
+
+(Btw, we send this to our own self-hosted Sentry instance, not to Sentry SaaS,
+so that we can be in this together.)
+
+Here's the info we may collect:
+
+  - OS username
+  - IP address
+  - install log
+  - runtime errors
+  - performance data
+
+Thirty (30) day retention. No marketing. Privacy policy at sentry.io/privacy.
+
+y or n? 
+Thank you. To avoid this prompt in the future, use one of these flags:
+
+  --report-self-hosted-issues
+  --no-report-self-hosted-issues
+
+or set the REPORT_SELF_HOSTED_ISSUES environment variable:
+
+  REPORT_SELF_HOSTED_ISSUES=1 to send data
+  REPORT_SELF_HOSTED_ISSUES=0 to not send data
+
+latest: Pulling from getsentry/sentry-cli
+Digest: sha256:485545f1581f40eae68d5eca153eb80868e47542144351381a7b98ecd5d82a91
+Status: Image is up to date for getsentry/sentry-cli:latest
+docker.io/getsentry/sentry-cli:latest
+
+▶ Checking for latest commit ... 
+skipped
+
+▶ Checking minimum requirements ...
+Found Docker version 23.0.5
+Found Docker Compose version 2.17.3
+
+▶ Turning things off ...
+time="2023-05-05T16:01:56+07:00" level=warning msg="The \"SNUBA_IMAGE\" variable is not set. Defaulting to a blank string."
+time="2023-05-05T16:01:56+07:00" level=warning msg="The \"SYMBOLICATOR_IMAGE\" variable is not set. Defaulting to a blank string."
+time="2023-05-05T16:01:56+07:00" level=warning msg="The \"SYMBOLICATOR_IMAGE\" variable is not set. Defaulting to a blank string."
+time="2023-05-05T16:01:56+07:00" level=warning msg="The \"SENTRY_EVENT_RETENTION_DAYS\" variable is not set. Defaulting to a blank string."
+time="2023-05-05T16:01:56+07:00" level=warning msg="The \"RELAY_IMAGE\" variable is not set. Defaulting to a blank string."
+time="2023-05-05T16:01:56+07:00" level=warning msg="The \"HEALTHCHECK_INTERVAL\" variable is not set. Defaulting to a blank string."
+time="2023-05-05T16:01:56+07:00" level=warning msg="The \"HEALTHCHECK_TIMEOUT\" variable is not set. Defaulting to a blank string."
+time="2023-05-05T16:01:56+07:00" level=warning msg="The \"HEALTHCHECK_RETRIES\" variable is not set. Defaulting to a blank string."
+parsing /home/aleksey/PycharmProjects/python_advanced/module_23_debugging_2/homework/sentry_hw/sentry/docker-compose.yml: error while interpolating services.redis.healthcheck.retries: failed to cast to expected type: strconv.Atoi: parsing "": invalid syntax
+Error in install/turn-things-off.sh:8.
+'$dc down -t $STOP_TIMEOUT --rmi local --remove-orphans' exited with status 15
+-> ./install.sh:main:23
+--> install/turn-things-off.sh:source:8
+
+Envelope from file sentry-envelope-27d631ded57bf54f55a530c8093ce0a5 dispatched
+Cleaning up...

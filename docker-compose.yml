@@ -1,0 +1,13 @@
+version: '2'
+services:
+  division:
+    build:
+      context: app
+    stop_signal: SIGKILL
+    ports:
+      - 5000:5000
+
+  generator:
+    build:
+      context: generator
+    stop_signal: SIGKILL

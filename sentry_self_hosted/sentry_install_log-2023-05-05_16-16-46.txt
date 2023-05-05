@@ -1,0 +1,2 @@
+install/_lib.sh: строка 23: /home/aleksey/PycharmProjects/python_advanced/module_23_debugging_2/homework/sentry_hw/sentry_self_hosted/.env: Нет такого файла или каталога
+./install.sh: строка 13: install/parse-cli.sh: Нет такого файла или каталога

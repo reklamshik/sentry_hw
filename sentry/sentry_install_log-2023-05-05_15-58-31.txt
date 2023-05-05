@@ -1,0 +1,176 @@
+install/_lib.sh: строка 20: .env: Нет такого файла или каталога
+▶ Parsing command line ...
+
+▶ Detecting Docker platform
+Detected Docker platform is linux/amd64
+
+▶ Initializing Docker Compose ...
+
+▶ Setting up error handling ...
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 292B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/debian:bullseye-slim
+#3 DONE 3.4s
+
+#4 [1/2] FROM docker.io/library/debian:bullseye-slim@sha256:f4da3f9b18fc242b739807a0fb3e77747f644f2fb3f67f4403fafce2286b431a
+#4 resolve docker.io/library/debian:bullseye-slim@sha256:f4da3f9b18fc242b739807a0fb3e77747f644f2fb3f67f4403fafce2286b431a done
+#4 sha256:249d9dc1b57918b203e45f647ea675cd940de5942863f35c979e5d926f024a7e 529B / 529B done
+#4 sha256:07df01f107e816e158e58182073b52ae5f065c54b7dd581b3db74a319aa3053f 1.46kB / 1.46kB done
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 0B / 31.40MB 0.1s
+#4 sha256:f4da3f9b18fc242b739807a0fb3e77747f644f2fb3f67f4403fafce2286b431a 1.85kB / 1.85kB done
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 2.10MB / 31.40MB 1.4s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 4.19MB / 31.40MB 1.7s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 6.29MB / 31.40MB 2.0s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 8.39MB / 31.40MB 2.5s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 10.49MB / 31.40MB 3.0s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 12.58MB / 31.40MB 3.4s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 14.68MB / 31.40MB 3.7s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 16.78MB / 31.40MB 4.0s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 18.87MB / 31.40MB 4.5s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 20.97MB / 31.40MB 4.8s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 23.07MB / 31.40MB 5.2s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 25.17MB / 31.40MB 5.7s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 27.26MB / 31.40MB 6.2s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 29.36MB / 31.40MB 6.8s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 31.40MB / 31.40MB 7.1s
+#4 sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 31.40MB / 31.40MB 7.2s done
+#4 extracting sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c
+#4 extracting sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c 0.8s done
+#4 DONE 8.2s
+
+#5 [2/2] RUN set -x   && apt-get update   && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends jq   && apt-get clean   && rm -rf /var/lib/apt/lists/*
+#5 0.265 + apt-get update
+#5 0.847 Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+#5 1.201 Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+#5 1.393 Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+#5 1.554 Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8183 kB]
+#5 6.085 Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [238 kB]
+#5 6.274 Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [14.6 kB]
+#5 7.140 Fetched 8644 kB in 7s (1261 kB/s)
+#5 7.140 Reading package lists...
+#5 7.648 + DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends jq
+#5 7.664 Reading package lists...
+#5 8.274 Building dependency tree...
+#5 8.452 Reading state information...
+#5 8.707 The following additional packages will be installed:
+#5 8.708   libjq1 libonig5
+#5 8.751 The following NEW packages will be installed:
+#5 8.752   jq libjq1 libonig5
+#5 9.001 0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+#5 9.001 Need to get 384 kB of archives.
+#5 9.001 After this operation, 1148 kB of additional disk space will be used.
+#5 9.001 Get:1 http://deb.debian.org/debian bullseye/main amd64 libonig5 amd64 6.9.6-1.1 [185 kB]
+#5 9.501 Get:2 http://deb.debian.org/debian bullseye/main amd64 libjq1 amd64 1.6-2.1 [135 kB]
+#5 9.637 Get:3 http://deb.debian.org/debian bullseye/main amd64 jq amd64 1.6-2.1 [64.9 kB]
+#5 9.786 debconf: delaying package configuration, since apt-utils is not installed
+#5 9.812 Fetched 384 kB in 1s (423 kB/s)
+#5 9.827 Selecting previously unselected package libonig5:amd64.
+#5 9.827 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6664 files and directories currently installed.)
+#5 9.832 Preparing to unpack .../libonig5_6.9.6-1.1_amd64.deb ...
+#5 9.835 Unpacking libonig5:amd64 (6.9.6-1.1) ...
+#5 9.869 Selecting previously unselected package libjq1:amd64.
+#5 9.871 Preparing to unpack .../libjq1_1.6-2.1_amd64.deb ...
+#5 9.874 Unpacking libjq1:amd64 (1.6-2.1) ...
+#5 9.904 Selecting previously unselected package jq.
+#5 9.907 Preparing to unpack .../archives/jq_1.6-2.1_amd64.deb ...
+#5 9.909 Unpacking jq (1.6-2.1) ...
+#5 9.934 Setting up libonig5:amd64 (6.9.6-1.1) ...
+#5 9.938 Setting up libjq1:amd64 (1.6-2.1) ...
+#5 9.942 Setting up jq (1.6-2.1) ...
+#5 9.946 Processing triggers for libc-bin (2.31-13+deb11u6) ...
+#5 9.966 + apt-get clean
+#5 9.971 + rm -rf /var/lib/apt/lists/auxfiles /var/lib/apt/lists/deb.debian.org_debian-security_dists_bullseye-security_InRelease /var/lib/apt/lists/deb.debian.org_debian-security_dists_bullseye-security_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/deb.debian.org_debian_dists_bullseye-updates_InRelease /var/lib/apt/lists/deb.debian.org_debian_dists_bullseye-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/deb.debian.org_debian_dists_bullseye_InRelease /var/lib/apt/lists/deb.debian.org_debian_dists_bullseye_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/lock /var/lib/apt/lists/partial
+#5 DONE 10.3s
+
+#6 exporting to image
+#6 exporting layers 0.0s done
+#6 writing image sha256:a6caeee04b27a4a15bbb14b3643aae9f135ec88c076144c65484411a384945a5 done
+#6 naming to docker.io/library/sentry-self-hosted-jq-local done
+#6 DONE 0.0s
+
+Hey, so ... we would love to automatically find out about issues with your
+Sentry instance so that we can improve the product. Turns out there is an app
+for that, called Sentry. Would you be willing to let us automatically send data
+about your instance upstream to Sentry for development and debugging purposes?
+
+  y / yes / 1
+  n / no / 0
+
+(Btw, we send this to our own self-hosted Sentry instance, not to Sentry SaaS,
+so that we can be in this together.)
+
+Here's the info we may collect:
+
+  - OS username
+  - IP address
+  - install log
+  - runtime errors
+  - performance data
+
+Thirty (30) day retention. No marketing. Privacy policy at sentry.io/privacy.
+
+y or n? 
+Thank you. To avoid this prompt in the future, use one of these flags:
+
+  --report-self-hosted-issues
+  --no-report-self-hosted-issues
+
+or set the REPORT_SELF_HOSTED_ISSUES environment variable:
+
+  REPORT_SELF_HOSTED_ISSUES=1 to send data
+  REPORT_SELF_HOSTED_ISSUES=0 to not send data
+
+latest: Pulling from getsentry/sentry-cli
+f7dab3ab2d6e: Pulling fs layer
+8bd10b77a777: Pulling fs layer
+80aeafe5b1af: Pulling fs layer
+e75529525eaf: Pulling fs layer
+39f5ba1d1194: Pulling fs layer
+e75529525eaf: Waiting
+39f5ba1d1194: Waiting
+8bd10b77a777: Download complete
+80aeafe5b1af: Verifying Checksum
+80aeafe5b1af: Download complete
+f7dab3ab2d6e: Download complete
+f7dab3ab2d6e: Pull complete
+8bd10b77a777: Pull complete
+e75529525eaf: Verifying Checksum
+80aeafe5b1af: Pull complete
+e75529525eaf: Pull complete
+39f5ba1d1194: Verifying Checksum
+39f5ba1d1194: Download complete
+39f5ba1d1194: Pull complete
+Digest: sha256:485545f1581f40eae68d5eca153eb80868e47542144351381a7b98ecd5d82a91
+Status: Downloaded newer image for getsentry/sentry-cli:latest
+docker.io/getsentry/sentry-cli:latest
+
+▶ Checking for latest commit ... 
+skipped
+
+▶ Checking minimum requirements ...
+Found Docker version 23.0.5
+Found Docker Compose version 2.17.3
+Unable to find image 'busybox:latest' locally
+latest: Pulling from library/busybox
+4b35f584bb4f: Pulling fs layer
+4b35f584bb4f: Verifying Checksum
+4b35f584bb4f: Download complete
+4b35f584bb4f: Pull complete
+Digest: sha256:b5d6fe0712636ceb7430189de28819e195e8966372edfc2d9409d79402a0dc16
+Status: Downloaded newer image for busybox:latest
+
+▶ Turning things off ...
+Couldn't find env file: /home/aleksey/PycharmProjects/python_advanced/module_23_debugging_2/homework/sentry_hw/sentry/.env
+Error in install/turn-things-off.sh:8.
+'$dc down -t $STOP_TIMEOUT --rmi local --remove-orphans' exited with status 1
+-> ./install.sh:main:23
+--> install/turn-things-off.sh:source:8
+
+Envelope from file sentry-envelope-eaa9416a32db05e043b54388478e43c9 dispatched
+Cleaning up...
